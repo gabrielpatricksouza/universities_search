@@ -1,6 +1,6 @@
 name: universities
 description: Universities é um package para consulta de todas as universidades do Brasil.
-version: 1.0.1
+version: 1.0.1+1
 homepage: https://github.com/gabrielpatricksouza/universities_search.git
 
 environment:
