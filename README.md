@@ -80,12 +80,12 @@ API and documentation used in the code.
 
 Home:
 ```dart
-'https://api-universidades.vercel.app/'
+https://api-universidades.vercel.app/
 ```
 
 Documentation:
 ```dart
-'https://documentacao-api-universidades.vercel.app/'
+https://documentacao-api-universidades.vercel.app/
 ```
 
 ## License
