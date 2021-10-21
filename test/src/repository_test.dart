@@ -3,24 +3,28 @@ import 'package:http/http.dart' as http;
 import 'package:mocktail/mocktail.dart';
 import 'package:universities/src/repository.dart';
 
-class ClientMock extends Mock implements http.Client{}
+class ClientMock extends Mock implements http.Client {}
 
-void main(){
+void main() {
   final client = ClientMock();
   final respository = UniversitiesRepository(client);
 
   test("deve buscar uma lista de universidades", () async {
-    when(client).calls(#get).thenAnswer((_) async => http.Response(jsonReturn, 200));
-    
+    when(client)
+        .calls(#get)
+        .thenAnswer((_) async => http.Response(jsonReturn, 200));
+
     final list = await respository.getUniversities();
 
     expect(list.isNotEmpty, equals(true));
     expect(list.first.id, equals(1));
   });
-  
+
   test("deve retornar uma exceptio se status code não for 200", () async {
-    when(client).calls(#get).thenAnswer((_) async => http.Response(jsonReturn, 400));
-    expect(()async => await respository.getUniversities(), throwsException);
+    when(client)
+        .calls(#get)
+        .thenAnswer((_) async => http.Response(jsonReturn, 400));
+    expect(() async => await respository.getUniversities(), throwsException);
   });
 }
 

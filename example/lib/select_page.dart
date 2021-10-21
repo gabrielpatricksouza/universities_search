@@ -16,26 +16,22 @@ class SelectPage extends StatelessWidget {
                   builder: (context) => SelectUniversity(
                     backButton: true,
                     infoButton: true,
-
                     labelText: "Universidades",
                     hintText: "Insira o nome de sua universidade",
                     errorText: "Universidade não encontrada!",
-
                     textFormFieldColor: Colors.blue,
                     iconBackColor: Colors.deepPurpleAccent,
                     iconCollegeColor: Colors.indigoAccent,
                     iconInfoColor: Colors.deepPurpleAccent,
-
                     borderRadius: 10.0,
-
-                    onSelect: (Map response){
+                    onSelect: (Map response) {
                       debugPrint(response.toString());
                     },
                   ),
                 ),
               );
             },
-          child: const Text("Search Universities")),
+            child: const Text("Search Universities")),
       ),
     );
   }
