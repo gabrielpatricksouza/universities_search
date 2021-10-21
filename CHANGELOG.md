@@ -1,3 +1,3 @@
 ## [1.0.1+1]
 
-* Primeiro release.
+* Correção de bugs.
