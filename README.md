@@ -52,13 +52,40 @@ class SelectPage extends StatelessWidget {
 }
 
 ```
+## onSelect
+
+The return of the onSelect function is a Map, containing all the data of the selected university..
+
+```dart
+{
+"id": 1,
+"full_name": "UNIVERSIDADE FEDERAL DE MATO GROSSO",
+"name": "UFMT",
+"ibge": "5103403",
+"city": "CUIABA",
+"uf": "MT",
+"zipcode": "78060900",
+"street": "AVENIDA FERNANDO CORREA DA COSTA",
+"number": "2367",
+"neighborhood": "BOA ESPERANÇA",
+"phone": "(65) 3615 8302",
+"created_at": "2020-08-30T02:50:17.000Z",
+"updated_at": "2020-11-27T18:40:06.000Z"
+}
+```
 
 ## API
 
 API and documentation used in the code. 
 
+Home:
 ```dart
-const url = 'https://api-universidades.vercel.app';
+const url = 'https://api-universidades.vercel.app/';
+```
+
+Documentation:
+```dart
+const url = 'https://documentacao-api-universidades.vercel.app/';
 ```
 
 ## License

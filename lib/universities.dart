@@ -154,14 +154,16 @@ class _SelectUniversityState extends State<SelectUniversity> {
                                               fontSize: 14,
                                               fontWeight: FontWeight.w500),
                                         ),
-                                        trailing: IconButton(
+                                        trailing: widget.infoButton ?
+                                        IconButton(
                                             onPressed: () =>
                                                 UniversityInfo.open(context,
                                                     _showItemList[index]),
                                             icon: Icon(
                                               Icons.info_outline,
                                               color: widget.iconInfoColor,
-                                            )),
+                                            )
+                                        ) : const SizedBox(),
                                       ),
                                     );
                                   },
