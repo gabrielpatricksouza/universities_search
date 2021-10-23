@@ -74,6 +74,10 @@ The return of the onSelect function is a Map, containing all the data of the sel
 }
 ```
 
+## Preview
+
+<img src="https://github.com/gabrielpatricksouza/universities_search/blob/master/preview/preview.gif" alt=""/>
+
 ## API
 
 API and documentation used in the code. 
